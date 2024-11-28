@@ -1,3 +1,9 @@
+:root {
+  --app-bg-color: #2B2B28;
+  --app-gold-color: #f9b020;
+  --app-lg-bg-color: #F8F8F8;
+}
+
 .container {
   width: min(100% - 32px, 1200px);
   margin-inline: auto;

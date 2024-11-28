@@ -5,10 +5,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Jewelry", "Gemstones", "Opal", "Onyx", "Rings", "Necklaces", "Bracelets", "Earrings"],
+  "author": "Samuel Reutcky, Myles Reid, Dave Summerville,  Oluwajuwon Shuaibu ",
   "license": "ISC",
-  "description": "",
+  "description": "Your one stop shop for all your jewelry needs",
   "devDependencies": {
     "lite-server": "^2.6.1"
   }
