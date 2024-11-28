@@ -83,7 +83,7 @@ header {
 /*-------------------------------*/
 
 .sign-in-modal {
-  height: 38rem;
+  height: 40rem;
   width: 30rem;
   position: absolute;
   display: flex;
@@ -94,11 +94,16 @@ header {
   margin: auto;
   z-index: 100;
   border-radius: 4px;
-  background-color: blue;
+  background-color: #ebebeb;
+}
+
+.modal-title {
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 .inputs {
-  margin-top: 10px;
+  margin-top: -20px;
   width: 25rem;
   height: 20rem;
   display: flex;
@@ -107,21 +112,42 @@ header {
 }
 
 .inputs input {
+  box-shadow: inset 1px 1px 1px rgb(0 0 0 / 20%);
   font-size: 20px;
   height: 4rem;
   width: 25rem;
   padding: 5px;
+  padding-left: 27px;
   border-radius: 6px;
+  transition: all 0.25s ease-in-out
 }
+
+.inputs input:focus {
+  border: 1px solid var(--app-gold-color);
+}
+
+input.username {background: #fff url(../img/user-icon.png) no-repeat 6px 12px;}
+input.email {background: #fff url(../img/email-icon.png) no-repeat 6px 13px;}
+input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12px;}
 
 
 .sign-up {
   height: 50px;
   width: 150px;
   font-size: 25px;
+  margin-top: -10px;
+  border-radius: 8px;
+  background-color: var(--app-gold-color);
+  box-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+  transition: all 0.25s ease-in-out;
+}
+
+.sign-up:hover {
+  filter: brightness(95%);
 }
 
 .sign-in {
+  display: grid;
   text-align: center;
   margin-top: 10px;
 }
@@ -131,8 +157,17 @@ header {
 }
 
 .log-in {
+  color: #000;
+  width: fit-content;
   font-size: 16px;
   font-weight: 300;
+  cursor: pointer;
+  justify-self: center;
+  transition: all 0.25s ease-in-out
+}
+
+.log-in:hover {
+  color: blue;
 }
 
 
