@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+@import url(./utils.css);
+
+body {
+	background-color: #012;
+	color: #fefefe;
+}
+
+header {
+  background-color: rgb(0 0 0 / 0.80);
+  height: 65px;
+  line-height: 65px;
+  
+  .logo {
+    height: 40px;
+    margin-top: 12.5px;
+  }
+  
+  nav {
+    ul {
+      li {
+        display: inline;
+        
+        a {
+          color: #fff;
+          text-decoration: none;
+          position: relative;
+          font-size: 2rem;
+          transition: all 0.25s ease-in-out;
+        }
+        
+        .links {
+          top: -7.5px;
+        }
+        
+        .links::after {
+          content: "";
+          position: absolute;
+          width: 0%; 
+          height: 2px;
+          background-color: var(--app-gold-color);
+          bottom: -1px;
+          left: 0;
+          transition: width 0.25s ease-in-out;
+        }
+        
+        .links:hover::after {
+          width: 100%;
+        }
+        
+        .bag {
+          top: -5px;
+        }
+
+        .shop {
+          font-size: 2.8rem;
+          margin-bottom: 4px;
+        }
+        
+        .bag:hover {
+          color: #bbb;
+        }
+        
+        .user {
+          font-size: 3.6rem;
+        }
+        
+        .user:hover {
+          color: #bbb;
+        }
+      }
+      
+      li + li {
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+.container {
+	width: min(100% - 30px, 1200px);
+	margin-inline: auto;
+}
+
+.flex {
+	display: flex;
+}
+
+article {
+	margin: 50px;
+
+}
+
+.feature-product {
+	width: 100%;
+	justify-content: space-between;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 4rem;
+}
+
+p {
+	line-height: 50px;
+}
+
+.fa-star {
+	color: yellow;	/* CHANGE THIS TO THE ROOT */
+}
+
+
+.fake-link {
+	color: rgb(80, 19, 172);
+	cursor: pointer;
+}
+
+button {
+	display: block;
+	font-size: 2rem;
+	width: 100px;
+	height: 60px;
+	margin: 15px;
+	border-radius: 15px; 
+	background-color: #234;
+}
+
+
+/*-------------------------------*/
+/*---------  Footer  ------------*/
+/*-------------------------------*/
+
+footer {
+  position: relative;
+  color: #fff;
+  height: 285px;
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+
+  h5 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+  }
+
+  p {
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    margin-top: 3px;
+  }
+
+  p:hover {
+    text-decoration: underline;
+  }
+
+  .line {
+    margin-top: 10px;
+    width: 95%;
+    background-color: #fff;
+    height: 1px;
+    margin: 0 auto;
+  }
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer * {
+  position: relative;
+  z-index: 2;
+}

@@ -1,0 +1,31 @@
+:root {
+  --app-bg-color: #2B2B28;
+  --app-gold-color: #f9b020;
+  --app-lg-bg-color: #F8F8F8;
+	--app-border-rad: 5px;
+}
+
+html {
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: min(100% - 32px, 1200px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-20 {
+  gap: 20px;
+}

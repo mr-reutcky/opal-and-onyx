@@ -8,120 +8,242 @@
     <meta name="keywords" content="html, css, seo, web devlopment">
     <title>Opal & Onyx</title>
     <link rel="icon" href="./src/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
     <link rel="stylesheet" href="./src/css/style.css">
     <script src="./src/js/script.js" defer></script>
   </head>
   <body>
     <main>
-        <div class="subscription-module">
-          <div class="container">
-            <p class="module-header">
-              Choose your right plan!
-            </p>
-            <p class="module-sub-header">
-              Choose the best plan and customize your subscription for a perfect fit.
-            </p>
-            <div class="tiers">
-              <div class="basic plan">
-                <div class="tier-level">
-                  <p class="tier-p standard">Standard</p>
-                </div>
-                <div class="tier-info">
-                  <ul>
-                    <li>
-                      Affordable Jewelry
-                    </li>
-                    <li>
-                      Exclusive Discounts
-                    </li>
-                    <li>
-                      Early Access
-                    </li>
-                    <li>
-                      Free Shipping
-                    </li>
-                    <li>
-                      Surprise Gift
-                    </li>
-                  </ul>
-                </div>
-                <button class="get-started"> Get started </button>
+      <Header>
+        <div class="container flex flex-between">
+          <a href="index.html"><img class="logo" src="./src/img/logo.png" alt="Opal & Onyx"></a>
+          <nav>
+            <ul>
+              <li><a class="links" href="index.html">Home</a></li>
+              <li><a class="links" href="detail.html">Shop</a></li>
+              <li>
+                <a class="links" href="mailto: customersupport@onyxandopal.com">
+                  Contact us
+                </a>
+              </li>
+              <li>
+                <a class="bag" href="">
+                  <i class="shop fa-solid fa-bag-shopping"></i>
+                </a>
+              </li>
+              <li>
+                <a class="user" href="">
+                  <i class="fa-solid fa-circle-user"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </Header>
+      <div class="container">
+        <section class="product-wrapper">
+          <div class="product">
+            <img alt="product-1" src="./src/img/the_one.jpg">
+            <div class="product-info">
+              <h4 class="product-name">The One Ring</h4>
+              <p class="price">$9,999.99</p>
+            </div>
+            <div class="buttons">
+              <button class="add-to"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="favourite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product">
+            <img alt="product-2" src="./src/img/purple_perl.jpg">
+            <div class="product-info">
+              <h4 class="product-name">Amethyst Perl set</h4>
+              <p class="price">$4,765.97</p>
+            </div>
+            <div class="buttons">
+              <button class="add-to"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="favourite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product">
+            <img alt="product-3" src="./src/img/jade_earring.jpg">
+            <div class="product-info">
+              <h4 class="product-name">Fancy Jade Earrings</h4>
+              <p class="price">$1,789.95</p>
+            </div>
+            <div class="buttons">
+              <button class="add-to"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="favourite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product">
+            <img alt="product-4" src="./src/img/garnet.jpg">
+            <div class="product-info">
+              <h4 class="product-name">Not Cursed Garnet Neckpiece</h4>
+              <p class="price">$89.95</p>
+            </div>
+            <div class="buttons">
+              <button class="add-to"><i class="fa-solid fa-bag-shopping"></i></button>
+              <button class="favourite"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="subscription-module">
+        <div class="container">
+          <p class="module-header">
+            Choose your right plan!
+          </p>
+          <p class="module-sub-header">
+            Choose the best plan and customize your subscription for a perfect fit.
+          </p>
+          <div class="tiers">
+            <div class="basic plan">
+              <div class="tier-level">
+                <p class="tier-p standard">Standard</p>
               </div>
-              <div class="premium plan">
-                <div class="tier-level">
-                  <p class="tier-p silver">Silver</p>
-                </div>
-                <div class="tier-info">
-                  <ul>
-                    <li>
-                      Higher Value Jewelry
-                    </li>
-                    <li>
-                      Customization Options
-                    </li>
-                    <li>
-                      Exclusive Designs
-                    </li>
-                    <li>
-                      Priority Support
-                    </li>
-                    <li>
-                      Special Discounts
-                    </li>
-                    <li>
-                      Flexible Box Options
-                    </li>
-                    <li>
-                      Free Shipping & Returns
-                    </li>
-                  </ul>
-                </div>
-                <button class="get-started"> Get started </button>
+              <div class="tier-info">
+                <ul>
+                  <li>
+                    Affordable Jewelry
+                  </li>
+                  <li>
+                    Exclusive Discounts
+                  </li>
+                  <li>
+                    Early Access
+                  </li>
+                  <li>
+                    Free Shipping
+                  </li>
+                  <li>
+                    Surprise Gift
+                  </li>
+                </ul>
               </div>
-              <div class="luxury plan">
-                <div class="tier-level">
-                  <p class="tier-p gold">Gold</p>
-                </div>
-                <div class="tier-info">
-                  <ul>
-                    <li>
-                      High-End Jewelry
-                    </li>
-                    <li>
-                      Personalized Styling
-                    </li>
-                    <li>
-                      Exclusive Access
-                    </li>
-                    <li>
-                      Special Packaging
-                    </li>
-                    <li>
-                      Free Gifts
-                    </li>
-                    <li>
-                      VIP Discounts
-                    </li>
-                    <li>
-                      Exclusive Events
-                    </li>
-                    <li>
-                      Extended Returns
-                    </li>
-                    <li>
-                      Free Shipping & Insurance
-                    </li>
-                  </ul>
-                </div>
-                <button class="get-started"> Get started </button>
+              <button class="get-started"> Get started </button>
+            </div>
+            <div class="premium plan">
+              <div class="tier-level">
+                <p class="tier-p silver">Silver</p>
               </div>
+              <div class="tier-info">
+                <ul>
+                  <li>
+                    Higher Value Jewelry
+                  </li>
+                  <li>
+                    Customization Options
+                  </li>
+                  <li>
+                    Exclusive Designs
+                  </li>
+                  <li>
+                    Priority Support
+                  </li>
+                  <li>
+                    Special Discounts
+                  </li>
+                  <li>
+                    Flexible Box Options
+                  </li>
+                  <li>
+                    Free Shipping & Returns
+                  </li>
+                </ul>
+              </div>
+              <button class="get-started"> Get started </button>
+            </div>
+            <div class="luxury plan">
+              <div class="tier-level">
+                <p class="tier-p gold">Gold</p>
+              </div>
+              <div class="tier-info">
+                <ul>
+                  <li>
+                    High-End Jewelry
+                  </li>
+                  <li>
+                    Personalized Styling
+                  </li>
+                  <li>
+                    Exclusive Access
+                  </li>
+                  <li>
+                    Special Packaging
+                  </li>
+                  <li>
+                    Free Gifts
+                  </li>
+                  <li>
+                    VIP Discounts
+                  </li>
+                  <li>
+                    Exclusive Events
+                  </li>
+                  <li>
+                    Extended Returns
+                  </li>
+                  <li>
+                    Free Shipping & Insurance
+                  </li>
+                </ul>
+              </div>
+              <button class="get-started"> Get started </button>
             </div>
           </div>
         </div>
+      </div>
     </main>
+    <footer>
+      <div class="flex flex-column gap-20 container">
+        <div class="container footer-sections flex flex-between">
+          <div class="shop flex flex-column">
+            <h5>SHOP</h5>
+            <p>Charms</p>
+            <p>Bracelets</p>
+            <p>Necklaces</p>
+            <p>Rings</p>
+            <p>All</p>
+          </div>
+          <div class="resources flex flex-column">
+            <h5>RESOURCES</h5>
+            <p>Check Order Status</p>
+            <p>Last Order Dates</p>
+            <p>Shipping</p>
+            <p>Returns</p>
+            <p>FAQ</p>
+          </div>
+          <div class="services flex flex-column">
+            <h5>SERVICES</h5>
+            <p>Store Locator</p>
+            <p>Gift Cards</p>
+            <p>Afterpay</p>
+            <p>Student Discount</p>
+            <p>Refer a Friend</p>
+          </div>
+          <div class="about-us flex flex-column">
+            <h5>ABOUT US</h5>
+            <p>Our Story</p>
+            <p>News & Investor Relations</p>
+            <p>Sustainability</p>
+            <p>Craftsmanship</p>
+            <p>Careers</p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="flex flex-between">
+          <p>&copy; 2023 Opal & Onyx</p>
+          <div class="flex gap-20">
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Accessibility</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
