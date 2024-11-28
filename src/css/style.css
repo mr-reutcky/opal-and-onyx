@@ -99,6 +99,7 @@ header {
   font-size: 2.2rem;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+  z-index: 1000;
 }
 
 button i .fa-comment:hover {
@@ -174,4 +175,55 @@ button > i {
 
 button i:hover {
   transform: scale(1.1);
+}
+
+/*-------------------------------*/
+/*---------  Footer  ------------*/
+/*-------------------------------*/
+
+footer {
+  position: relative;
+  color: #fff;
+  height: 285px;
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+
+  h5 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+  }
+
+  p {
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    margin-top: 3px;
+  }
+
+  p:hover {
+    text-decoration: underline;
+  }
+
+  .line {
+    margin-top: 10px;
+    width: 95%;
+    background-color: #fff;
+    height: 1px;
+    margin: 0 auto;
+  }
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer * {
+  position: relative;
+  z-index: 2;
 }
