@@ -228,6 +228,101 @@ button i:hover {
 }
 
 /*-------------------------------*/
+/*----- subscription tiers ------*/
+/*-------------------------------*/
+
+.subscription-module { 
+  display: flex;  
+  flex-direction: column;     
+  justify-content: center;     
+  align-items: center;
+  text-align: center;
+  background-color: #f4f5f6;
+  padding: 50px 0;
+}
+
+.module-header {
+  font-size: 35px;
+  font-weight: 700px;
+}
+
+.module-sub-header {
+  font-size: 20px;
+  font-weight: 500px;
+  margin-bottom: 30px;
+}
+
+.tiers {
+  display: flex;  
+  justify-content: center;     
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.tier-info {
+  padding: 15px;
+}
+
+.tier-info ul {
+  list-style-type: disc; 
+  padding-left: 20px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 250px;
+  border-radius: 6px;
+  gap: 30px;
+  height: 360px;
+  position: relative;
+  background-color: #fff;
+}
+
+.tier-p {
+  padding: 10px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.standard {
+  background-color: #00a8ff;
+}
+
+.silver {
+  background-color: #f1f1f1;
+}
+
+.gold {
+  background-color: #ffd700;
+}
+
+.get-started {
+  width: 225px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #fff; 
+  color: #000;
+  border: none; 
+  cursor: pointer; 
+  border: 2px solid #000;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 12px;
+}
+
+.get-started:hover {
+  background-color: #d6d6d6;
+}
+
+/*-------------------------------*/
 /*---------  Footer  ------------*/
 /*-------------------------------*/
 
