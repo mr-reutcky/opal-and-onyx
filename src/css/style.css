@@ -7,3 +7,74 @@
   margin-inline: auto;
 }
 
+/*-------------------------------*/
+/*------  Product Section  ------*/
+/*-------------------------------*/
+
+main {
+  height: 100svh;
+  display: grid;
+  place-items: center;
+}
+.product-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.product {
+  height: 28rem;
+  width: calc(25% - 20px);
+  background-color: rgb(43 43 40 / 40%);
+  backdrop-filter: saturate(180%) blur(50px);
+  border-radius: 6px;
+  display: grid;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.product > img {
+  height: 15rem;
+  width: auto;
+  border-radius: 6px;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+
+.product-info {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  height: 5.5rem;
+  padding-left: 2rem;
+  text-align: center;
+}
+
+.price {
+  font-weight: 200;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.add-to, .favourite {
+  font-size: 2rem;
+  width: 4rem;
+  background: transparent;
+  border: none;
+  cursor: default;
+}
+
+button > i {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+button i:hover {
+  transform: scale(1.1);
+}
