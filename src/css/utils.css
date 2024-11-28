@@ -29,3 +29,11 @@ html {
 .gap-20 {
   gap: 20px;
 }
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
