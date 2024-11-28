@@ -79,11 +79,72 @@ header {
 }
 
 /*-------------------------------*/
+/*------    Log in Modal   ------*/
+/*-------------------------------*/
+
+.sign-in-modal {
+  height: 38rem;
+  width: 30rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  inset: 0;
+  margin: auto;
+  z-index: 100;
+  border-radius: 4px;
+  background-color: blue;
+}
+
+.inputs {
+  margin-top: 10px;
+  width: 25rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.inputs input {
+  font-size: 20px;
+  height: 4rem;
+  width: 25rem;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+
+.sign-up {
+  height: 50px;
+  width: 150px;
+  font-size: 25px;
+}
+
+.sign-in {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.already-have {
+  font-size: 18px;
+}
+
+.log-in {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+
+
+/*-------------------------------*/
 /*------  Product Section  ------*/
 /*-------------------------------*/
 .product-wrapper {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 100%;
 }
 
