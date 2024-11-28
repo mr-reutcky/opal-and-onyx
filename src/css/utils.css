@@ -4,6 +4,10 @@
   --app-lg-bg-color: #F8F8F8;
 }
 
+html {
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+}
+
 .container {
   width: min(100% - 32px, 1200px);
   margin-inline: auto;
@@ -15,4 +19,12 @@
 
 .flex-between {
   justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-20 {
+  gap: 20px;
 }
