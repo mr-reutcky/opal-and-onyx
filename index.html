@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=devicewidth, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Samuel Reutcky">
     <meta name="description" content="My Web Project">
     <meta name="keywords" content="html, css, seo, web devlopment">
@@ -19,7 +19,7 @@
   </head>
   <body>
     <main>
-      <Header>
+      <header>
         <div class="container flex flex-between">
           <a href="index.html"><img class="logo" src="./src/img/logo.png" alt="Opal & Onyx"></a>
           <nav>
@@ -43,7 +43,20 @@
               </li>
             </ul>
         </div>
-      </Header>
+      </header>
+      <div class="sign-in-modal">
+        <h4 class="modal-title">Create an Account</h4>
+        <div class="inputs">
+          <input class="username" type="text" placeholder="Username">
+          <input class="email" type="text" placeholder="Email Address">
+          <input class="password" type="password" placeholder="Password">
+        </div>
+        <button class="sign-up">Sign Up</button>
+        <div class="sign-in">
+          <p class="already-have">Already have an account?</p>
+          <p class="log-in">Log in instead</p>
+        </div>
+      </div>
       <div class="container">
         <section class="product-wrapper">
           <div class="product">
