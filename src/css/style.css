@@ -83,6 +83,7 @@ header {
 /*-------------------------------*/
 
 .sign-in-modal {
+  opacity: 0;
   height: 40rem;
   width: 30rem;
   position: absolute;
