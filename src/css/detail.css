@@ -79,7 +79,9 @@ header {
 	display: none;
 }
 
-
+.bars::before {
+	display: none;
+}
 				
 .user:hover {
 	color: #bbb;
