@@ -436,7 +436,7 @@ button i:hover {
 	height: 35rem;
 	width: 60rem;
 	background-color: #ebebeb;
-	margin: 5% auto;
+	margin: 5% auto 25px auto;
 	padding: 20px;
 	border-radius: var(--app-border-rad);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -454,7 +454,7 @@ button i:hover {
 	padding: 5px;
 	margin: 10px 0;
 	border: 1px solid #ccc;
-	border-radius: 5px;
+	border-radius: var(--app-border-rad);
 }
 
 .inputs input:focus {
@@ -490,7 +490,64 @@ button i:hover {
 .send-btn:hover {
 	background-color: #45a049;
 }
+.error {
+	font-family: inherit;
+	font-size: inherit;
+	padding-left: 5px;
+}
 
+.find-us {
+	font-family: inherit;
+	font-size: inherit;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.social-list {
+	height: 50px;
+	width: 60rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0 auto 5% auto;
+}
+
+.social-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  background-color: #000;
+  color: #fff;
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+	transition: all 0.25s ease-in-out;
+}
+
+.icon:hover {
+  color: var(--app-gold-color); 
+	transition: all 0.25s ease-in-out;
+
+}
+
+.fa-facebook {
+	background-color: #1877f2;
+}
+.fa-square-instagram {
+	background-color: #e1306c;
+}
+
+.fa-x-twitter {
+	background-color: #000;
+}
 
 /*-------------------------------*/
 /*---------  Footer  ------------*/
