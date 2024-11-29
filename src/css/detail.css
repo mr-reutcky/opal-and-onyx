@@ -393,6 +393,7 @@ button {
   padding-top: 10px;
   background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
   backdrop-filter: saturate(180%) blur(50px);
+  border: thin groove #aa8c2c;
   border-radius: var(--app-border-rad);
   display: grid;
   object-fit: cover;
