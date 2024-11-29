@@ -4,7 +4,7 @@
   --app-gold-color: #D4AF37;
   --app-text-color: #FAF9F6;
 	--app-border-rad: 5px;
-  --app-box-color: #1b1a1a;
+  --app-box-color: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(32,69,29,1) 0%, rgba(34,62,62,1) 100%); 
 }
 
 html {

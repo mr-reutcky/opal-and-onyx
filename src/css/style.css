@@ -387,9 +387,10 @@ a .product:first-of-type {
   height: 28rem;
   width: calc(25% - 20px);
   padding-top: 10px;
-  background-color: var(--app-box-color);
+  background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
   backdrop-filter: saturate(180%) blur(50px);
   border-radius: var(--app-border-rad);
+  border: thin groove #aa8c2c;
   display: grid;
   object-fit: cover;
   overflow: hidden;
@@ -493,12 +494,16 @@ button i:hover {
 }
 
 .tier {
-  background: var(--app-box-color);
+  background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
   border-radius: var(--app-border-rad);
   padding: 24px; 
   width: 380px;
   box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tier:nth-of-type(3){
+  border: thin groove #aa8c2c;
 }
 
 .tier:hover {
