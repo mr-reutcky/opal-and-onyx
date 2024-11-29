@@ -254,6 +254,64 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 }
 
 
+/*-------------------------------*/
+/*--------  Black Friday --------*/
+/*-------------------------------*/
+
+.black-friday {
+  margin-top: 40px;
+  position: relative;
+  color: #fff;
+  height: 400px;
+  background-image: url(../img/black-friday-bg.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.black-friday::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgb(0 0 0 / 0.8);
+  z-index: 1;
+}
+
+.black-friday-info {
+  position: relative;
+  z-index: 2;
+}
+
+.black-friday-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.black-friday-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.black-friday-button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: var(--app-border-rad);
+  background-color: var(--app-gold-color);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.black-friday-button:hover {
+  background-color: darken(var(--app-gold-color), 90%); /* Will change later */
+}
 
 
 /*-------------------------------*/
@@ -322,6 +380,7 @@ button > i {
 button i:hover {
   transform: scale(1.1);
 }
+
 
 /*-------------------------------*/
 /*----- subscription tiers ------*/
