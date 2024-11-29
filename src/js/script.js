@@ -74,7 +74,7 @@ listen("submit", contactForm, (e) => {
 });
 
 /*-------------------------------*/
-/*----  Header - Visibility  ----*/
+/*----  sign-in - Visibility ----*/
 /*-------------------------------*/
 
 function signInVisibility() {
@@ -104,6 +104,13 @@ function backgroundBlur() {
     bgDarken.classList.add('hidden');
   }
 }
+
+listen('keydown', document, function(event) {
+  if (event.key === 'Escape' && signIn.classList.contains('visible')) {
+    signInVisibility();
+    backgroundBlur();
+  }
+})
 
 listen('click', userIcon, (event) => {
   signInVisibility();
