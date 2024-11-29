@@ -546,6 +546,7 @@ button i:hover {
 }
 
 .contact-content input {
+  color: var(--app-text-color);
   background-color: #272525;
 	box-shadow: inset 1px 1px 1px rgb(0 0 0 / 20%);
 	font-size: 20px;
@@ -562,6 +563,7 @@ button i:hover {
 }
 
 .contact-content textarea {
+  color: var(--app-text-color);
   background-color: #272525;
 	width: 100%;
 	height: 80px;
