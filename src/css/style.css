@@ -11,9 +11,6 @@ body {
 	position: relative;
 }
 
-main {
-  margin-top: 75px;
-}
 /*-------------------------------*/
 /*----------  Header  -----------*/
 /*-------------------------------*/
@@ -46,7 +43,7 @@ header {
         }
         
         .links {
-          top: -7.5px;
+          top: -1.5px;
         }
         
         .links::after {
@@ -63,21 +60,16 @@ header {
         .links:hover::after {
           width: 100%;
         }
-        
-        .bag {
-          top: -5px;
-        }
 
         .shop {
           font-size: 2.8rem;
-          margin-bottom: 4px;
         }
         
         .bag:hover {
           color: #bbb;
         }
         
-        .user {
+        .fa-circle-user {
           font-size: 3.6rem;
         }
         
@@ -127,14 +119,26 @@ h1 {
 	z-index: 10;
 }
 
+.slogan {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
 .hero-button {
-	width: 150px;
+	width: 175px;
 	height: 50px;
 	line-height: 50px;
-	color: #000;
+  font-weight: 600;
+	color: #fff;
 	background-color: var(--app-gold-color);
 	margin: 20px auto;
 	border-radius: var(--app-border-rad);
+  transition: all 0.25s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #f6bf51;
 }
 
 /*-------------------------------*/
@@ -315,7 +319,7 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 }
 
 .black-friday-button:hover {
-  background-color: darken(var(--app-gold-color), 90%); /* Will change later */
+  background-color: #f6bf51;
 }
 
 
