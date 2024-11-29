@@ -219,12 +219,12 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 /*-------------------------------*/
 
 .feature-product {
-  margin-top: 120px; /* Adjusted for fixed header */
+  margin-top: 120px; 
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .product-image {
@@ -266,6 +266,16 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 
 .rating .fa-star {
   color: #f1c40f;
+}
+
+.info {
+  max-width: 500px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  gap: 20px;
 }
 
 button {
