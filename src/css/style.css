@@ -147,7 +147,7 @@ h1 {
 }
 
 .hero-button:hover {
-  background-color: #f6bf51;
+  background-color: var(--app-gold-hover);
 }
 
 /*-------------------------------*/
@@ -175,7 +175,7 @@ button i .fa-comment:hover {
 }
 
 .chat:hover {
-  background-color: #f6bf51;
+  background-color: var(--app-gold-hover);
 }
 
 /*-------------------------------*/
@@ -260,7 +260,7 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 }
 
 .sign-up:hover {
-  filter: brightness(75%);
+  background-color: var(--app-gold-hover);
 }
 
 .sign-in {
@@ -357,7 +357,7 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 }
 
 .black-friday-button:hover {
-  background-color: #f6bf51;
+  background-color: var(--app-gold-hover);
 }
 
 
@@ -550,7 +550,7 @@ button i:hover {
 }
 
 .get-started:hover {
-  background: #f6bf51;
+  background: var(--app-gold-hover);
 }
 
 

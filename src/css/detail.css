@@ -162,7 +162,7 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 }
 
 .sign-up:hover {
-  filter: brightness(75%);
+  background-color: var(--app-gold-hover);
 }
 
 .sign-in {
@@ -283,7 +283,7 @@ button {
 }
 
 .buy-now:hover {
-  background-color: #f6bf51;
+  background-color: var(--app-gold-hover);
 }
 
 .add-to-bag {
