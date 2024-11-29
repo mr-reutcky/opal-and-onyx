@@ -1,6 +1,6 @@
 'use strict';
 /*-------------------------------*/
-/*----------  Utility Functions   -----------*/
+/*-----  Utility Functions   -----*/
 /*-------------------------------*/
 function select(selector, scope = document) {
   return scope.querySelector(selector);
@@ -38,21 +38,6 @@ favouriteIcon.forEach(icon => {
     event.stopPropagation();
     event.preventDefault()
   });
-})
-
-
-/*-------------------------------*/
-/*----  Header - Visibility  ----*/
-/*-------------------------------*/
-
-listen('click', userIcon, () => {
-  if (signIn.classList.contains('hidden')){
-    signIn.classList.remove('hidden');
-    signIn.classList.add('visible');
-  } else {
-    signIn.classList.remove('visible');
-    signIn.classList.add('hidden');
-  }
 });
 
 /*-------------------------------*/
@@ -85,6 +70,10 @@ listen("submit", contactForm, (e) => {
 		}, 3000);
   } 
 });
+
+/*-------------------------------*/
+/*----  Header - Visibility  ----*/
+/*-------------------------------*/
 
 function signInVisibility() {
   if (signIn.classList.contains('hidden')){
