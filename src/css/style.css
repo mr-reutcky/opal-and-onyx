@@ -328,6 +328,7 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 /*-------------------------------*/
 
 .product-wrapper {
+  margin-top: 100px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -412,6 +413,7 @@ button i:hover {
 /*-------------------------------*/
 
 .subscription {
+  margin-top: 100px;
   text-align: center;
   padding: 32px; 
   background-color: #f9f9f9;
@@ -507,6 +509,7 @@ button i:hover {
 /*-------------------------------*/
 
 footer {
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -564,7 +567,8 @@ footer .line {
 }
 
 .footer-sections > div {
-  flex: 1 1 20%;
+  text-align: center;
+  width: fit-content;
   margin: 10px;
 }
 
