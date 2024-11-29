@@ -259,7 +259,7 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 /*-------------------------------*/
 
 .black-friday {
-  margin-top: 40px;
+  margin-top: 100px;
   position: relative;
   color: #fff;
   height: 400px;
@@ -289,7 +289,8 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 }
 
 .black-friday-title {
-  font-size: 3rem;
+  color: var(--app-gold-color);
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
