@@ -31,7 +31,6 @@
 - Checked responsiveness on multiple devices, including tablets and smartphones.
 - Adjusted margins, paddings, and font sizes for a seamless experience.
 
-
 ### 4. **Deployment**
 
 - Published the site using **GitHub Pages** for easy sharing and accessibility.
