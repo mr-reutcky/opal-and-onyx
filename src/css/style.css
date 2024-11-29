@@ -199,16 +199,6 @@ button i .fa-comment:hover {
   background-color: #1d1c1c;
 }
 
-.sign-in-modal::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  width: 100svw;
-  height: 100svh;
-  background-color: rgb(0 0 0 / 0.5);
-  z-index: -1000;
-}
-
 .modal-title {
   font-size: 18px;
   margin-top: 20px;
