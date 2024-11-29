@@ -2,21 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=devicewidth, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Samuel Reutcky">
     <meta name="description" content="My Web Project">
     <meta name="keywords" content="html, css, seo, web devlopment">
     <title>Opal & Onyx</title>
-    <link rel="icon" href="./src/img/favicon.svg" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-zRridkk/tGlo4KLwUC3Dve4xM4hc+kUF7jXwYe+q1+R0EQhAR3WiU20J43vtjG/9kLPxz+HO8cPF+2oLHFlHAxeX/g=="   
-
+    <link rel="icon" href="./src/img/logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
     <link rel="stylesheet" href="./src/css/detail.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- <script src="./src/js/script.js" defer></script> -->
+    <script src="./src/js/script.js" defer></script>
   </head>
 	<body>
     <header>
@@ -37,56 +36,51 @@
               </a>
             </li>
             <li>
-              <a class="user" href="">
-                <i class="fa-solid fa-circle-user"></i>
+              <a>
+                <i class="user fa-solid fa-circle-user"></i>
               </a>
             </li>
           </ul>
       </div>
     </header>
+    <div class="sign-in-modal hidden">
+      <h4 class="modal-title">Create an Account</h4>
+      <div class="inputs">
+        <input class="username" type="text" placeholder="Username">
+        <input class="email" type="text" placeholder="Email Address">
+        <input class="password" type="password" placeholder="Password">
+      </div>
+      <button class="sign-up">Sign Up</button>
+      <div class="sign-in">
+        <p class="already-have">Already have an account?</p>
+        <p class="log-in">Log in instead</p>
+      </div>
+    </div>
 		<main class="container">
-			<section class="flex feature-product">
-				<figure>
-					<img src="./src/img/test.jpg">
-					<figcaption>
-
-					</figcaption>
-				</figure>
-				<article>
-					<h2>
-						Sparking Opal Ring
-					</h2>
-					<p>
-						Product Details: blah blah blah 
-					</p>
-					<p>
-						4.0
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-regular fa-star"></i>	
-						<i class="fa-solid fa-angle-down"></i>	
-						<p class="fake-link">71 Ratings</p>			
-					</p>
-					<h3>$100</h3>
-				</article>
-				<aside>
-					<h3> $100 </h3>
-					<p><span class="fake-link"></span></p>
-					<p>
-						<i class="fa-solid fa-location-dot"></i>
-						Where to buy
-					</p>
-					<select>
-						<option value="value1">Option 1</option>
-						<option value="value2">Option 2</option>
-						<option value="value3">Option 3</option>
-					</select> 
-					<button>Add to cart</button>
-					<button>Buy now</button>				
-				</aside>
-			</section>
+      <section class="feature-product">
+        <div class="product-image">
+          <img src="./src/img/test.jpg" alt="Sparking Opal Ring">
+        </div>
+        <div class="product-details">
+          <h2>Sparking Opal Ring</h2>
+          <p class="info">
+            The Sparking Opal Ring showcases a vibrant opal gemstone, set in a 
+            polished band for a touch of elegance and color.
+          </p>
+          <div class="rating">
+            <p class="fake-num">4.0</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <p class="fake-link">71 Ratings</p>
+          </div>
+          <h3>$100</h3>
+          <button class="buy-now">Buy This Item</button>
+          <button class="add-to-bag">Add to Bag</button>
+        </div>
+      </section>
 		</main>
     <footer>
       <div class="flex flex-column gap-20 container">
@@ -118,7 +112,7 @@
           <div class="about-us flex flex-column">
             <h5>ABOUT US</h5>
             <p>Our Story</p>
-            <p>News & Investor Relations</p>
+            <p>Investor Relations</p>
             <p>Sustainability</p>
             <p>Craftsmanship</p>
             <p>Careers</p>
@@ -127,7 +121,7 @@
         <div class="line"></div>
         <div class="flex flex-between">
           <p>&copy; 2023 Opal & Onyx</p>
-          <div class="flex gap-20">
+          <div class="flex gap-20 legal">
             <p>Privacy Policy</p>
             <p>Terms of Use</p>
             <p>Accessibility</p>
