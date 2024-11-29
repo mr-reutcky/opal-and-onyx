@@ -176,7 +176,7 @@ button i .fa-comment:hover {
 .sign-in-modal {
   height: 40rem;
   width: 30rem;
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -332,7 +332,9 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 10px;
   width: 100%;
+  margin: 50px 0;
 }
 
 a:has(+ .product){
@@ -366,8 +368,8 @@ a .product:first-of-type {
   height: 15rem;
   width: 100%;
   border-radius: 6px 6px 0 0;
-  justify-self: center;
-  object-fit: cover;
+  object-position: center;
+  object-fit: contain;
 }
 
 .product-info {
@@ -375,7 +377,6 @@ a .product:first-of-type {
   flex-direction: column; 
   justify-content: space-between;
   height: 5.5rem;
-  padding-left: 2rem;
   text-align: center;
 }
 
@@ -405,6 +406,20 @@ button > i {
 
 button i:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  a:has(+ .product), .product{
+    width: calc(50% - 20px);
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  a:has(+ .product), .product{
+    width: 100%;
+    max-width: 280px;
+  }
 }
 
 
