@@ -75,6 +75,14 @@ function signInVisibility() {
   }
 }
 
+function signInAnimation() {
+  if (signIn.classList.contains('slide-in')) {
+    signIn.classList.remove('slide-in');
+  } else {
+    signIn.classList.add('slide-in');
+  }
+}
+
 function backgroundBlur() {
   if (bgDarken.classList.contains('hidden')){
     bgDarken.classList.remove('hidden');
@@ -88,12 +96,14 @@ function backgroundBlur() {
 listen('click', userIcon, (event) => {
   signInVisibility();
   backgroundBlur();
+  signInAnimation();
   event.stopPropagation();
 });
 
 listen('click', window, () => {
   if (signIn.classList.contains('visible')) { 
     signInVisibility(); 
+    signInAnimation();
     backgroundBlur()
   }
 })
