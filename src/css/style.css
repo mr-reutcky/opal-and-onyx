@@ -563,7 +563,7 @@ button i:hover {
 
 .contact-content {
 	height: 35rem;
-	width: 60rem;
+	min-width: 30svw;
 	background-color: var(--app-box-color);
 	margin: 5% auto 25px auto;
 	padding: 20px;
@@ -638,10 +638,10 @@ button i:hover {
 
 .social-list {
 	height: 50px;
-	width: 60rem;
+	min-width: 60svw;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0;
   margin: 0 auto 5% auto;
 }
