@@ -222,18 +222,19 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 /*-------------------------------*/
 
 .feature-product {
-  margin: 100px;
+  margin-top: 120px; /* Adjusted for fixed header */
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
-  padding: 40px 0;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .product-image {
   flex: 1 1 50%;
   max-width: 500px;
-  border-radius: 8px;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .product-image img {
@@ -250,62 +251,35 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 }
 
 .product-details {
-  flex: 1 1 50%;
-  max-width: 500px;
+  flex: 1 1 45%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  gap: 20px;
 }
 
-.product-details h2 {
-  font-size: 2.5rem;
+.product-details h2,
+.product-details h3 {
   color: #fff;
-  margin-bottom: 10px;
-}
-
-.product-details p {
-  font-size: 1.4rem;
-  color: #fff;
-  margin-bottom: 10px;
 }
 
 .rating {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-}
-
-.fake-num {
-  margin: 10.5px 10px 0 0;
 }
 
 .rating .fa-star {
   color: #f1c40f;
-  margin-right: 5px;
-}
-
-.rating p.fake-link {
-  margin: 0 0 0 10px;
-  color: #432de6;
-  cursor: pointer;
-}
-
-.product-details h3 {
-  font-size: 2.5rem;
-  color: #e67e22;
-  margin-bottom: 20px;
 }
 
 button {
   background-color: var(--app-gold-color);
   color: #fff;
   border: none;
-  padding: 12px 25px;
+  padding: 10px 20px;
   border-radius: 5px;
-  font-size: 1.4rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 button:hover {
@@ -326,59 +300,10 @@ button.add-to-bag:hover {
 
 @media (max-width: 768px) {
   .feature-product {
-    flex-direction: row; 
     gap: 15px;
   }
 
-  .product-image,
-  .product-details {
-    flex: 0 1 auto;
-    max-width: 100%;
-  }
-
-  .info {
-    display: none;
-  }
-
-  .product-details h2 {
-    font-size: 2.2rem;
-  }
-
-  .product-details h3 {
-    font-size: 2.2rem;
-  }
-
-  .rating .fa-star {
-    font-size: 1.6rem;
-  }
-
-  button {
-    font-size: 1.3rem;
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 460px) {
-  .feature-product {
-    flex-direction: column; 
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .product-image,
-  .product-details {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .info {
-    display:contents;
-  }
-
-  .product-details h2 {
-    font-size: 1.8rem;
-  }
-
+  .product-details h2,
   .product-details h3 {
     font-size: 1.8rem;
   }
@@ -387,13 +312,24 @@ button.add-to-bag:hover {
     font-size: 1.4rem;
   }
 
-  .product-details p {
-    font-size: 1.2rem;
+  button {
+    padding: 8px 15px;
   }
 
-  button {
-    font-size: 1.2rem;
-    padding: 8px 15px;
+  .info {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 460px) {
+  .feature-product {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .product-details h2,
+  .product-details h3 {
+    font-size: 1.6rem;
   }
 }
 
