@@ -10,6 +10,7 @@
 body {
 	position: relative;
 }
+
 /*-------------------------------*/
 /*----------  Header  -----------*/
 /*-------------------------------*/
@@ -42,7 +43,7 @@ header {
         }
         
         .links {
-          top: -7.5px;
+          top: -1.5px;
         }
         
         .links::after {
@@ -59,21 +60,16 @@ header {
         .links:hover::after {
           width: 100%;
         }
-        
-        .bag {
-          top: -5px;
-        }
 
         .shop {
           font-size: 2.8rem;
-          margin-bottom: 4px;
         }
         
         .bag:hover {
           color: #bbb;
         }
         
-        .user {
+        .fa-circle-user {
           font-size: 3.6rem;
         }
         
@@ -123,14 +119,26 @@ h1 {
 	z-index: 10;
 }
 
+.slogan {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
 .hero-button {
-	width: 150px;
+	width: 175px;
 	height: 50px;
 	line-height: 50px;
-	color: #000;
+  font-weight: 600;
+	color: #fff;
 	background-color: var(--app-gold-color);
 	margin: 20px auto;
 	border-radius: var(--app-border-rad);
+  transition: all 0.25s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #f6bf51;
 }
 
 /*-------------------------------*/
@@ -311,7 +319,7 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 }
 
 .black-friday-button:hover {
-  background-color: darken(var(--app-gold-color), 90%); /* Will change later */
+  background-color: #f6bf51;
 }
 
 
@@ -326,6 +334,15 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   width: 100%;
 }
 
+a:has(+ .product){
+  height: 28rem;
+  width: calc(25% - 20px);
+}
+
+a .product:first-of-type {
+  width: 100%;
+}
+
 .product {
   height: 28rem;
   width: calc(25% - 20px);
@@ -335,14 +352,21 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   display: grid;
   object-fit: cover;
   overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.02);
 }
 
 .product > img {
   height: 15rem;
-  width: auto;
-  border-radius: 6px;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
   justify-self: center;
-  margin-top: 10px;
+  object-fit: cover;
 }
 
 .product-info {
@@ -370,7 +394,7 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   width: 4rem;
   background: transparent;
   border: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 button > i {
@@ -483,35 +507,13 @@ button i:hover {
 /*-------------------------------*/
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   color: #fff;
-  height: 285px;
   background-image: url(../img/footer-bg.jpg);
   background-size: cover;
-
-  h5 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 20px 0 10px 0;
-  }
-
-  p {
-    cursor: pointer;
-    transition: all 0.25s ease-in-out;
-    margin-top: 3px;
-  }
-
-  p:hover {
-    text-decoration: underline;
-  }
-
-  .line {
-    margin-top: 10px;
-    width: 95%;
-    background-color: #fff;
-    height: 1px;
-    margin: 0 auto;
-  }
+  padding: 20px;
 }
 
 footer::before {
@@ -521,10 +523,72 @@ footer::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(0 0 0 / 0.8);
+  z-index: 1;
 }
 
 footer * {
   position: relative;
   z-index: 2;
+}
+
+footer h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+}
+
+footer p {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  margin-top: 3px;
+}
+
+footer p:hover {
+  text-decoration: underline;
+}
+
+footer .line {
+  margin-top: 10px;
+  width: 95%;
+  background-color: #fff;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-sections > div {
+  flex: 1 1 20%;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-sections > div {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-sections {
+    flex-direction: column;
+    align-items: stretch; /* Ensures children stretch to the full width */
+  }
+
+  .footer-sections > div {
+    flex: 0 0 auto; /* Prevents shrinking */
+    width: 100%; /* Explicitly set to stack in a column */
+    margin: 0; /* Removes any gaps between stacked items */
+    text-align: center;
+  }
+
+  .legal {
+    display: none;
+  }
 }
