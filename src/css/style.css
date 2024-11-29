@@ -44,9 +44,10 @@ header {
           font-size: 2rem;
           transition: all 0.25s ease-in-out;
         }
-        
+
         .links {
           top: -1.5px;
+					font-size: 2rem;
         }
         
         .links::after {
@@ -63,20 +64,11 @@ header {
         .links:hover::after {
           width: 100%;
         }
-
-        .shop {
-          font-size: 2.8rem;
-        }
         
         .bag:hover {
           color: #bbb;
         }
-        
-        .fa-circle-user {
-          font-size: 3.6rem;
-          transition: all 0.25s ease-in-out;
-        }
-        
+                
         .user:hover {
           color: #bbb;
         }
@@ -88,6 +80,44 @@ header {
     }
   }
 }
+
+.fa-circle-user {
+	font-size: 3.6rem;
+	transition: all 0.25s ease-in-out;
+}
+
+.fa-bars {
+	font-size: 2.5rem;
+	transition: all 0.25s ease-in-out;
+	display:none;
+}
+
+.shop {
+	font-size: 3.4rem;
+	transition: all 0.25s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .links {
+    font-size: 1.6rem;
+  }
+	.fa-circle-user {
+		font-size: 2.5rem;
+	}
+	.shop {
+		font-size: 2.4rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.links {
+		display: none;
+	}
+	.fa-bars {
+		display: inline-block;
+	}
+}
+
 /*-------------------------------*/
 /*------    Hero Banner    ------*/
 /*-------------------------------*/
