@@ -272,7 +272,7 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
   max-width: 500px;
 }
 
-.buttons {
+.feature-buttons {
   display: flex;
   width: 100%;
   gap: 20px;
