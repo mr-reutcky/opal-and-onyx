@@ -360,8 +360,8 @@ a .product:first-of-type {
   height: 15rem;
   width: 100%;
   border-radius: 6px 6px 0 0;
-  justify-self: center;
-  object-fit: cover;
+  object-position: center;
+  object-fit: contain;
 }
 
 .product-info {
@@ -369,7 +369,6 @@ a .product:first-of-type {
   flex-direction: column; 
   justify-content: space-between;
   height: 5.5rem;
-  padding-left: 2rem;
   text-align: center;
 }
 
