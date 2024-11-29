@@ -41,19 +41,6 @@ favouriteIcon.forEach(icon => {
 })
 
 
-/*-------------------------------*/
-/*----  Header - Visibility  ----*/
-/*-------------------------------*/
-
-// listen('click', userIcon, () => {
-//   if (signIn.classList.contains('hidden')){
-//     signIn.classList.remove('hidden');
-//     signIn.classList.add('visible');
-//   } else {
-//     signIn.classList.remove('visible');
-//     signIn.classList.add('hidden');
-//   }
-// });
 
 /*-------------------------------*/
 /*--------  Contact Form  -------*/
@@ -86,15 +73,6 @@ listen("submit", contactForm, (e) => {
   } 
 });
 
-listen('click', userIcon, () => {
-  if (signIn.classList.contains('hidden')){
-    signIn.classList.remove('hidden');
-    signIn.classList.add('visible');
-  } else {
-    signIn.classList.remove('visible');
-    signIn.classList.add('hidden');
-  }
-});
 
 function signInVisibility() {
   if (signIn.classList.contains('hidden')){

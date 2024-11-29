@@ -7,9 +7,6 @@
   margin-inline: auto;
 }
 
-::placeholder {
-  color: var(--app-text-color);
-}
 
 body {
   color: var(--app-text-color);
@@ -196,7 +193,7 @@ button i .fa-comment:hover {
   margin: auto;
   z-index: 200;
   border-radius: 4px;
-  background-color: #1d1c1c;
+  background: var(--app-box-color);
   transition: all 0.25s ease-in-out;
 }
 
