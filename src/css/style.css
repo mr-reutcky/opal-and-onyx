@@ -65,13 +65,6 @@ header {
           width: 100%;
         }
         
-        .bag:hover {
-          color: #bbb;
-        }
-                
-        .user:hover {
-          color: #bbb;
-        }
       }
       
       li + li {
@@ -84,6 +77,11 @@ header {
 .fa-circle-user {
 	font-size: 3.6rem;
 	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.user:hover {
+	color: #bbb;
 }
 
 .fa-bars {
@@ -95,6 +93,11 @@ header {
 .shop {
 	font-size: 3.4rem;
 	transition: all 0.25s ease-in-out;
+	cursor: pointer;
+}
+
+.shop:hover {
+	color: #bbb;
 }
 
 @media (max-width: 768px) {
