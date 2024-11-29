@@ -291,9 +291,14 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 .rating {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+.stars {
+  display: flex;
+  gap: 1.5px;
 }
 
-.rating .fa-star {
+.rating .stars {
   color: #f1c40f;
 }
 
