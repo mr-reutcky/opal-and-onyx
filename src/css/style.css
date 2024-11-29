@@ -386,7 +386,7 @@ a .product:first-of-type {
 .product {
   height: 28rem;
   width: calc(25% - 20px);
-  padding-top: 10px;
+  padding-top: 20px;
   background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
   backdrop-filter: saturate(180%) blur(50px);
   border: thin groove #aa8c2c;
@@ -421,10 +421,12 @@ a .product:first-of-type {
 }
 
 .product-name {
+  font-size: 18px;
   color: var(--app-text-color);
 }
 
 .price {
+  font-size: 16px;
   font-weight: 200;
   color: var(--app-text-color);
 }

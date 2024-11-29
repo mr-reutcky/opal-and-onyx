@@ -11,13 +11,15 @@ function selectAll(selector, scope = document) {
 function listen(event, selector, callback) {
   return selector.addEventListener(event, callback);
 }
-/*-------------------------------*/
-/*---  Sign In Modal - Hearts --*/
-/*-------------------------------*/
 const signIn = select('.sign-in-modal');
 const userIcon = select('.user');
 const favouriteIcon = selectAll('.fa-heart');
 const bgDarken = select('.out-of-focus');
+
+
+/*-------------------------------*/
+/*---  Product - Hearts --*/
+/*-------------------------------*/
 
 favouriteIcon.forEach(icon => {
   listen('click', icon, () => {
