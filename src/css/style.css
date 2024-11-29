@@ -11,9 +11,6 @@ body {
 	position: relative;
 }
 
-main {
-  margin-top: 75px;
-}
 /*-------------------------------*/
 /*----------  Header  -----------*/
 /*-------------------------------*/
@@ -327,7 +324,9 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 10px;
   width: 100%;
+  margin: 50px 0;
 }
 
 a:has(+ .product){
@@ -400,6 +399,20 @@ button > i {
 
 button i:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  a:has(+ .product), .product{
+    width: calc(50% - 20px);
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  a:has(+ .product), .product{
+    width: 100%;
+    max-width: 280px;
+  }
 }
 
 
