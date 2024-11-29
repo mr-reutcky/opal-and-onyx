@@ -74,6 +74,13 @@ function backgroundBlur() {
   }
 }
 
+listen('keydown', document, function(event) {
+  if (event.key === 'Escape' && signIn.classList.contains('visible')) {
+    signInVisibility();
+    backgroundBlur();
+  }
+})
+
 listen('click', userIcon, (event) => {
   signInVisibility();
   backgroundBlur();
