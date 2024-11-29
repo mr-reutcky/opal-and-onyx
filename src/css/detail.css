@@ -68,6 +68,10 @@ header {
         .fa-circle-user {
           font-size: 3.6rem;
         }
+
+        .user {
+          transition: all 0.25s ease-in-out;
+        }
         
         .user:hover {
           color: #bbb;
