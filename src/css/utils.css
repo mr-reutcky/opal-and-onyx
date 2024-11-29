@@ -9,6 +9,11 @@ html {
   font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 
+a {
+  color: #000;
+  text-decoration: none;
+}
+
 .container {
   width: min(100% - 32px, 1200px);
   margin-inline: auto;

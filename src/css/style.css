@@ -267,6 +267,15 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   width: 100%;
 }
 
+a:has(+ .product){
+  height: 28rem;
+  width: calc(25% - 20px);
+}
+
+a .product:first-of-type {
+  width: 100%;
+}
+
 .product {
   height: 28rem;
   width: calc(25% - 20px);
@@ -312,6 +321,10 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   background: transparent;
   border: none;
   cursor: default;
+}
+
+a .product .add-to, a .product .favourite{
+  cursor: pointer;
 }
 
 button > i {
