@@ -37,10 +37,20 @@ a {
 
 .hidden {
   opacity: 0;
+  visibility: hidden;
 }
 
 .visible {
   opacity: 1;
+  visibility: visible;
+}
+
+.focus {
+  filter: blur(0);
+}
+
+.unfocus {
+  filter:blur(50%);
 }
 
 .liked {

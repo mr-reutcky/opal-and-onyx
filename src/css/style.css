@@ -72,6 +72,10 @@ header {
         .fa-circle-user {
           font-size: 3.6rem;
         }
+
+        .user {
+          transition: all 0.25s ease-in-out;
+        }
         
         .user:hover {
           color: #bbb;
@@ -352,6 +356,7 @@ a .product:first-of-type {
 .product {
   height: 28rem;
   width: calc(25% - 20px);
+  padding-top: 10px;
   background-color: rgb(43 43 40 / 40%);
   backdrop-filter: saturate(180%) blur(50px);
   border-radius: 6px;

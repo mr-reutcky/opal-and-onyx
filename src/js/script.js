@@ -15,6 +15,7 @@ function listen(event, selector, callback) {
 const signIn = select('.sign-in-modal');
 const userIcon = select('.user');
 const favouriteIcon = selectAll('.fa-heart');
+const body = select('body');
 
 favouriteIcon.forEach(icon => {
   listen('click', icon, () => {
@@ -64,8 +65,7 @@ listen("submit", contactForm, (e) => {
   } 
 });
 
-
-listen('click', userIcon, () => {
+function signInVisibility() {
   if (signIn.classList.contains('hidden')){
     signIn.classList.remove('hidden');
     signIn.classList.add('visible');
@@ -73,4 +73,24 @@ listen('click', userIcon, () => {
     signIn.classList.remove('visible');
     signIn.classList.add('hidden');
   }
+}
+
+function backgroundBlur() {
+  if (body.classList.contains('focus')){
+    body.classList.remove('focus');
+    body.classList.add('unfocus');
+  }
+}
+
+listen('click', userIcon, (event) => {
+  signInVisibility();
+  event.stopPropagation();
 });
+
+listen('click', window, () => {
+  if (signIn.classList.contains('visible')) { signInVisibility(); }
+})
+
+listen('click', signIn, (event) => {
+  event.stopPropagation();
+})
