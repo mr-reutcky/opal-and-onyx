@@ -1,17 +1,19 @@
 'use strict';
-
+/*-------------------------------*/
+/*----------  Utility Functions   -----------*/
+/*-------------------------------*/
 function select(selector, scope = document) {
   return scope.querySelector(selector);
 }
-
 function selectAll(selector, scope = document) {
   return scope.querySelectorAll(selector);
 }
-
 function listen(event, selector, callback) {
   return selector.addEventListener(event, callback);
 }
-
+/*-------------------------------*/
+/*---  Sign In Modal - Hearts --*/
+/*-------------------------------*/
 const signIn = select('.sign-in-modal');
 const userIcon = select('.user');
 const favouriteIcon = selectAll('.fa-heart');
@@ -37,6 +39,25 @@ favouriteIcon.forEach(icon => {
   });
 })
 
+
+/*-------------------------------*/
+/*----  Header - Visibility  ----*/
+/*-------------------------------*/
+
+listen('click', userIcon, () => {
+  if (signIn.classList.contains('hidden')){
+    signIn.classList.remove('hidden');
+    signIn.classList.add('visible');
+  } else {
+    signIn.classList.remove('visible');
+    signIn.classList.add('hidden');
+  }
+});
+
+/*-------------------------------*/
+/*--------  Contact Form  -------*/
+/*-------------------------------*/
+
 const contactForm = select(".contact-form"); 
 listen("submit", contactForm, (e) => {
   e.preventDefault(); // In order to adjust for dynamic changes in the 
@@ -45,7 +66,7 @@ listen("submit", contactForm, (e) => {
   const userName = select(".name").value.trim();
   const email = select(".contact-email").value.trim();
   const message = select(".message").value.trim();
-  const errorElement = select(".error"); // Use id selector for error
+  const errorElement = select(".error"); 
 
   errorElement.textContent = "";
 
@@ -62,15 +83,4 @@ listen("submit", contactForm, (e) => {
 			errorElement.textContent = "";
 		}, 3000);
   } 
-});
-
-
-listen('click', userIcon, () => {
-  if (signIn.classList.contains('hidden')){
-    signIn.classList.remove('hidden');
-    signIn.classList.add('visible');
-  } else {
-    signIn.classList.remove('visible');
-    signIn.classList.add('hidden');
-  }
 });
