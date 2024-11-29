@@ -105,8 +105,10 @@ h3 {
 	font-size: 4rem;
 }
 
-p {
-	line-height: 50px;
+.feature-product {
+  p {
+    line-height: 50px;
+  }
 }
 
 .fa-star {
@@ -129,41 +131,18 @@ button {
 	background-color: #234;
 }
 
-
 /*-------------------------------*/
 /*---------  Footer  ------------*/
 /*-------------------------------*/
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   color: #fff;
-  height: 285px;
   background-image: url(../img/footer-bg.jpg);
   background-size: cover;
-
-  h5 {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 20px 0 10px 0;
-  }
-
-  p {
-    cursor: pointer;
-    transition: all 0.25s ease-in-out;
-    margin-top: 3px;
-  }
-
-  p:hover {
-    text-decoration: underline;
-  }
-
-  .line {
-    margin-top: 10px;
-    width: 95%;
-    background-color: #fff;
-    height: 1px;
-    margin: 0 auto;
-  }
+  padding: 20px;
 }
 
 footer::before {
@@ -173,10 +152,72 @@ footer::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(0 0 0 / 0.8);
+  z-index: 1;
 }
 
 footer * {
   position: relative;
   z-index: 2;
+}
+
+footer h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 20px 0 10px 0;
+}
+
+footer p {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  margin-top: 3px;
+}
+
+footer p:hover {
+  text-decoration: underline;
+}
+
+footer .line {
+  margin-top: 10px;
+  width: 95%;
+  background-color: #fff;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-sections > div {
+  flex: 1 1 20%;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-sections > div {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-sections {
+    flex-direction: column;
+    align-items: stretch; /* Ensures children stretch to the full width */
+  }
+
+  .footer-sections > div {
+    flex: 0 0 auto; /* Prevents shrinking */
+    width: 100%; /* Explicitly set to stack in a column */
+    margin: 0; /* Removes any gaps between stacked items */
+    text-align: center;
+  }
+
+  .legal {
+    display: none;
+  }
 }
