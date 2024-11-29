@@ -338,7 +338,6 @@ button.add-to-bag:hover {
 /*-------------------------------*/
 
 .product-wrapper {
-  background-color: var(--app-2nd-bg-color);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -360,7 +359,7 @@ a .product:first-of-type {
   height: 28rem;
   width: calc(25% - 20px);
   padding-top: 10px;
-  background-color: var(--app-box-color);
+  background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
   backdrop-filter: saturate(180%) blur(50px);
   border-radius: var(--app-border-rad);
   display: grid;
@@ -369,6 +368,13 @@ a .product:first-of-type {
   user-select: none;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+}
+
+h6 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--app-text-color);
 }
 
 .product:hover {
@@ -424,12 +430,6 @@ button > i {
 
 button i:hover {
   transform: scale(1.1);
-}
-
-h6 {
-  font-size: 2.5rem;
-  color: var(--app-text-color);
-  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
