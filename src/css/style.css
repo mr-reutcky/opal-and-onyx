@@ -147,7 +147,7 @@ h1 {
 }
 
 .hero-button:hover {
-  background-color: #f6bf51;
+  background-color: var(--app-gold-hover);
 }
 
 /*-------------------------------*/
@@ -177,7 +177,7 @@ button i .fa-comment:hover {
 }
 
 .chat:hover {
-  background-color: #f6bf51;
+  background-color: var(--app-gold-hover);
 }
 
 @media screen and (max-width: 480px) {
@@ -274,7 +274,7 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 }
 
 .sign-up:hover {
-  filter: brightness(75%);
+  background-color: var(--app-gold-hover);
 }
 
 .sign-in {
@@ -371,7 +371,7 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 }
 
 .black-friday-button:hover {
-  background-color: #f6bf51;
+  background-color: var(--app-gold-hover);
 }
 
 
@@ -400,9 +400,10 @@ a .product:first-of-type {
 .product {
   height: 28rem;
   width: calc(25% - 20px);
-  padding-top: 10px;
+  padding-top: 20px;
   background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
   backdrop-filter: saturate(180%) blur(50px);
+  border: thin groove #aa8c2c;
   border-radius: var(--app-border-rad);
   display: grid;
   object-fit: cover;
@@ -414,7 +415,7 @@ a .product:first-of-type {
 
 .product:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
+  box-shadow: 0 8px 16px rgb(200 200 200 / 0.15);
 }
 
 .product > img {
@@ -434,10 +435,12 @@ a .product:first-of-type {
 }
 
 .product-name {
+  font-size: 18px;
   color: var(--app-text-color);
 }
 
 .price {
+  font-size: 16px;
   font-weight: 200;
   color: var(--app-text-color);
 }
@@ -511,7 +514,7 @@ button i:hover {
   border-radius: var(--app-border-rad);
   padding: 24px; 
   width: 380px;
-  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+  box-shadow: 0 4px 6px rgb(200 200 200 / 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -521,7 +524,7 @@ button i:hover {
 
 .tier:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
+  box-shadow: 0 8px 16px rgb(200 200 200 / 0.2);
 }
 
 .tier-name {
@@ -561,7 +564,7 @@ button i:hover {
 }
 
 .get-started:hover {
-  background: #f6bf51;
+  background: var(--app-gold-hover);
 }
 
 
