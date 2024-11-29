@@ -3,7 +3,7 @@
 @import url(./utils.css);
 
 body {
-	background-color: rgb(20, 20, 17);
+  background-color: var(--app-bg-color);
 	color: #fefefe;
 }
 
@@ -110,7 +110,7 @@ header {
   margin: auto;
   z-index: 100;
   border-radius: 4px;
-  background-color: #ebebeb;
+  background-color: #1d1c1c;
 }
 
 .modal-title {
@@ -142,11 +142,13 @@ header {
   border: 1px solid var(--app-gold-color);
 }
 
-input.username {background: #fff url(../img/user-icon.png) no-repeat 6px 12px;}
-input.email {background: #fff url(../img/email-icon.png) no-repeat 6px 13px;}
-input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12px;}
+input.username {background: #272525 url(../img/user-icon.png) no-repeat 6px 12px;}
+input.email {background: #272525 url(../img/email-icon.png) no-repeat 6px 13px;}
+input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 12px;}
+
 
 .sign-up {
+  color: var(--app-text-color);
   height: 50px;
   width: 150px;
   font-size: 25px;
@@ -172,7 +174,7 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 }
 
 .log-in {
-  color: #000;
+  color: var(--app-text-color);
   width: fit-content;
   font-size: 16px;
   font-weight: 300;
@@ -191,6 +193,7 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 /*-------------------------------*/
 
 .feature-product {
+  margin: 100px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -244,7 +247,7 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 }
 
 .fake-num {
-  margin-right: 10px;
+  margin: 10.5px 10px 0 0;
 }
 
 .rating .fa-star {
@@ -253,8 +256,8 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 }
 
 .rating p.fake-link {
-  margin-left: 10px;
-  color: #6c5ce7;
+  margin: 0 0 0 10px;
+  color: #432de6;
   cursor: pointer;
 }
 
@@ -265,7 +268,7 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
 }
 
 button {
-  background-color: #e67e22;
+  background-color: var(--app-gold-color);
   color: #fff;
   border: none;
   padding: 12px 25px;
@@ -277,7 +280,7 @@ button {
 }
 
 button:hover {
-  background-color: #d35400;
+  background-color: #f6bf51;
 }
 
 button.add-to-bag {
@@ -388,7 +391,7 @@ footer::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0 0 0 / 0.8);
+  background-color: rgb(0 0 0 / 0.85);
   z-index: 1;
 }
 

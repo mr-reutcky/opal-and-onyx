@@ -1,8 +1,10 @@
 :root {
-  --app-bg-color: #2B2B28;
-  --app-gold-color: #f9b020;
-  --app-lg-bg-color: #F8F8F8;
+  --app-bg-color: #0e0d0d;
+  --app-2nd-bg-color: #0f0f0f;
+  --app-gold-color: #D4AF37;
+  --app-text-color: #FAF9F6;
 	--app-border-rad: 5px;
+  --app-box-color: #1b1a1a;
 }
 
 html {
