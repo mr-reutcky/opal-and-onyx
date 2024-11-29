@@ -397,6 +397,119 @@ button.add-to-bag:hover {
   }
 }
 
+/*-------------------------------*/
+/*------  Product Section  ------*/
+/*-------------------------------*/
+
+.product-wrapper {
+  background-color: var(--app-2nd-bg-color);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  margin: 50px 0;
+}
+
+a:has(+ .product){
+  height: 28rem;
+  width: calc(25% - 20px);
+}
+
+a .product:first-of-type {
+  width: 100%;
+}
+
+.product {
+  height: 28rem;
+  width: calc(25% - 20px);
+  padding-top: 10px;
+  background-color: var(--app-box-color);
+  backdrop-filter: saturate(180%) blur(50px);
+  border-radius: var(--app-border-rad);
+  display: grid;
+  object-fit: cover;
+  overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.product:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
+}
+
+.product > img {
+  height: 15rem;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  object-position: center;
+  object-fit: contain;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  height: 5.5rem;
+  text-align: center;
+}
+
+.product-name {
+  color: var(--app-text-color);
+}
+
+.price {
+  font-weight: 200;
+  color: var(--app-text-color);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.add-to, .favourite {
+  color: var(--app-gold-color);
+  font-size: 2rem;
+  width: 4rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button > i {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+button i:hover {
+  transform: scale(1.1);
+}
+
+h6 {
+  font-size: 2.5rem;
+  color: var(--app-text-color);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  a:has(+ .product), .product{
+    width: calc(50% - 20px);
+    max-width: 280px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  a:has(+ .product), .product{
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
 
 /*-------------------------------*/
 /*---------  Footer  ------------*/

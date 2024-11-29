@@ -1,6 +1,6 @@
 'use strict';
 /*-------------------------------*/
-/*----------  Utility Functions   -----------*/
+/*-----  Utility Functions   -----*/
 /*-------------------------------*/
 function select(selector, scope = document) {
   return scope.querySelector(selector);
@@ -38,9 +38,7 @@ favouriteIcon.forEach(icon => {
     event.stopPropagation();
     event.preventDefault()
   });
-})
-
-
+});
 
 /*-------------------------------*/
 /*--------  Contact Form  -------*/
@@ -73,6 +71,9 @@ listen("submit", contactForm, (e) => {
   } 
 });
 
+/*-------------------------------*/
+/*----  Header - Visibility  ----*/
+/*-------------------------------*/
 
 function signInVisibility() {
   if (signIn.classList.contains('hidden')){
