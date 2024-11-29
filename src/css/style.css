@@ -671,7 +671,7 @@ button i:hover {
 }
 
 .send-btn:hover {
-	background-color: #45a049;
+	background-color: var(--app-gold-hover);
 }
 .error {
 	font-family: inherit;
@@ -691,7 +691,8 @@ button i:hover {
 	min-width: 60svw;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  justify-content: center;
   padding: 0;
   margin: 0 auto 5% auto;
 }
@@ -717,7 +718,7 @@ button i:hover {
 }
 
 .icon:hover {
-  color: var(--app-gold-color); 
+  transform: translateY(-10px);
 	transition: all 0.25s ease-in-out;
 
 }
