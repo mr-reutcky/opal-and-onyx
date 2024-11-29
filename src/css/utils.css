@@ -42,3 +42,7 @@ a {
 .visible {
   opacity: 1;
 }
+
+.liked {
+  color: #f00;
+}

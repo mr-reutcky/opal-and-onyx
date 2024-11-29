@@ -289,15 +289,21 @@ a .product:first-of-type {
   display: grid;
   object-fit: cover;
   overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.02);
 }
 
 .product > img {
   height: 15rem;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
   justify-self: center;
-  /* margin-top: 10px; */
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 .product-info {
@@ -325,10 +331,6 @@ a .product:first-of-type {
   width: 4rem;
   background: transparent;
   border: none;
-  cursor: default;
-}
-
-a .product .add-to, a .product .favourite{
   cursor: pointer;
 }
 
