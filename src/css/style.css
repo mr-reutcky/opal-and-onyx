@@ -190,10 +190,12 @@ button i .fa-comment:hover {
   align-items: center;
   inset: 0;
   margin: auto;
-  z-index: 100;
+  z-index: 200;
   border-radius: 4px;
   background-color: #ebebeb;
+  transition: all 0.25s ease-in-out;
 }
+
 
 .modal-title {
   font-size: 18px;
@@ -268,6 +270,17 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   color: blue;
 }
 
+.out-of-focus{
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 70%);
+  backdrop-filter: saturate(180%);
+  z-index: 100;
+  transition: all 0.25s ease-in-out;
+}
 
 /*-------------------------------*/
 /*--------  Black Friday --------*/

@@ -15,7 +15,7 @@ function listen(event, selector, callback) {
 const signIn = select('.sign-in-modal');
 const userIcon = select('.user');
 const favouriteIcon = selectAll('.fa-heart');
-const body = select('body');
+const bgDarken = select('.out-of-focus');
 
 favouriteIcon.forEach(icon => {
   listen('click', icon, () => {
@@ -76,19 +76,26 @@ function signInVisibility() {
 }
 
 function backgroundBlur() {
-  if (body.classList.contains('focus')){
-    body.classList.remove('focus');
-    body.classList.add('unfocus');
+  if (bgDarken.classList.contains('hidden')){
+    bgDarken.classList.remove('hidden');
+    bgDarken.classList.add('visible');
+  } else {
+    bgDarken.classList.remove('visible');
+    bgDarken.classList.add('hidden');
   }
 }
 
 listen('click', userIcon, (event) => {
   signInVisibility();
+  backgroundBlur();
   event.stopPropagation();
 });
 
 listen('click', window, () => {
-  if (signIn.classList.contains('visible')) { signInVisibility(); }
+  if (signIn.classList.contains('visible')) { 
+    signInVisibility(); 
+    backgroundBlur()
+  }
 })
 
 listen('click', signIn, (event) => {

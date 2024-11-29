@@ -45,14 +45,6 @@ a {
   visibility: visible;
 }
 
-.focus {
-  filter: blur(0);
-}
-
-.unfocus {
-  filter:blur(50%);
-}
-
 .liked {
   color: #f00;
 }
