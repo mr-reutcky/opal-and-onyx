@@ -10,6 +10,10 @@
 body {
 	position: relative;
 }
+
+main {
+  margin-top: 75px;
+}
 /*-------------------------------*/
 /*----------  Header  -----------*/
 /*-------------------------------*/
@@ -289,10 +293,11 @@ a .product:first-of-type {
 
 .product > img {
   height: 15rem;
-  width: auto;
+  width: 100%;
   border-radius: 6px;
   justify-self: center;
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  /* object-fit: cover; */
 }
 
 .product-info {
