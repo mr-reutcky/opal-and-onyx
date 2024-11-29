@@ -389,6 +389,7 @@ a .product:first-of-type {
   padding-top: 10px;
   background: linear-gradient(45deg, rgba(61,61,61,1) 0%, rgba(23,73,73,1) 100%); 
   backdrop-filter: saturate(180%) blur(50px);
+  border: thin groove #aa8c2c;
   border-radius: var(--app-border-rad);
   display: grid;
   object-fit: cover;
@@ -400,7 +401,7 @@ a .product:first-of-type {
 
 .product:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
+  box-shadow: 0 8px 16px rgb(200 200 200 / 0.15);
 }
 
 .product > img {
@@ -497,7 +498,7 @@ button i:hover {
   border-radius: var(--app-border-rad);
   padding: 24px; 
   width: 380px;
-  box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+  box-shadow: 0 4px 6px rgb(200 200 200 / 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -507,7 +508,7 @@ button i:hover {
 
 .tier:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
+  box-shadow: 0 8px 16px rgb(200 200 200 / 0.2);
 }
 
 .tier-name {
