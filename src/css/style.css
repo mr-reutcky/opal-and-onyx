@@ -10,6 +10,10 @@
 body {
 	position: relative;
 }
+
+main {
+  margin-top: 75px;
+}
 /*-------------------------------*/
 /*----------  Header  -----------*/
 /*-------------------------------*/
@@ -326,6 +330,15 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   width: 100%;
 }
 
+a:has(+ .product){
+  height: 28rem;
+  width: calc(25% - 20px);
+}
+
+a .product:first-of-type {
+  width: 100%;
+}
+
 .product {
   height: 28rem;
   width: calc(25% - 20px);
@@ -335,14 +348,21 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   display: grid;
   object-fit: cover;
   overflow: hidden;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.02);
 }
 
 .product > img {
   height: 15rem;
-  width: auto;
-  border-radius: 6px;
+  width: 100%;
+  border-radius: 6px 6px 0 0;
   justify-self: center;
-  margin-top: 10px;
+  object-fit: cover;
 }
 
 .product-info {
@@ -370,7 +390,7 @@ input.password {background: #fff url(../img/password-icon.png) no-repeat 5px 12p
   width: 4rem;
   background: transparent;
   border: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 button > i {

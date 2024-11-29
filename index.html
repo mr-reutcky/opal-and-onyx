@@ -7,7 +7,7 @@
     <meta name="description" content="My Web Project">
     <meta name="keywords" content="html, css, seo, web devlopment">
     <title>Opal & Onyx</title>
-    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="./src/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,7 +50,7 @@
 					<a class="hero-button">See our selections</a>
 				</div>
 			</section>
-      <div class="sign-in-modal">
+      <div class="sign-in-modal hidden">
         <h4 class="modal-title">Create an Account</h4>
         <div class="inputs">
           <input class="username" type="text" placeholder="Username">
@@ -74,17 +74,19 @@
       </section>
       <div class="container">
         <section class="product-wrapper">
-          <div class="product">
-            <img alt="product-1" src="./src/img/the_one.jpg">
-            <div class="product-info">
-              <h4 class="product-name">The One Ring</h4>
-              <p class="price">$9,999.99</p>
+          <a href="./detail.html" target="_self">
+            <div class="product">
+              <img alt="product-1" src="./src/img/the_one.jpg">
+              <div class="product-info">
+                <h4 class="product-name">The One Ring</h4>
+                <p class="price">$9,999.99</p>
+              </div>
+              <div class="buttons">
+                <button class="add-to"><i class="fa-solid fa-bag-shopping"></i></button>
+                <button class="favourite"><i class="fa-regular fa-heart"></i></button>
+              </div>
             </div>
-            <div class="buttons">
-              <button class="add-to"><i class="fa-solid fa-bag-shopping"></i></button>
-              <button class="favourite"><i class="fa-regular fa-heart"></i></button>
-            </div>
-          </div>
+          </a>
           <div class="product">
             <img alt="product-2" src="./src/img/purple_perl.jpg">
             <div class="product-info">

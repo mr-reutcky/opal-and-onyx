@@ -2,21 +2,20 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=devicewidth, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Samuel Reutcky">
     <meta name="description" content="My Web Project">
     <meta name="keywords" content="html, css, seo, web devlopment">
     <title>Opal & Onyx</title>
-    <link rel="icon" href="./src/img/favicon.svg" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-zRridkk/tGlo4KLwUC3Dve4xM4hc+kUF7jXwYe+q1+R0EQhAR3WiU20J43vtjG/9kLPxz+HO8cPF+2oLHFlHAxeX/g=="   
-
+    <link rel="icon" href="./src/img/logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css" media="all">
     <link rel="stylesheet" href="./src/css/detail.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- <script src="./src/js/script.js" defer></script> -->
+    <script src="./src/js/script.js" defer></script>
   </head>
 	<body>
     <header>
@@ -37,13 +36,26 @@
               </a>
             </li>
             <li>
-              <a class="user" href="">
-                <i class="fa-solid fa-circle-user"></i>
+              <a>
+                <i class="user fa-solid fa-circle-user"></i>
               </a>
             </li>
           </ul>
       </div>
     </header>
+    <div class="sign-in-modal hidden">
+      <h4 class="modal-title">Create an Account</h4>
+      <div class="inputs">
+        <input class="username" type="text" placeholder="Username">
+        <input class="email" type="text" placeholder="Email Address">
+        <input class="password" type="password" placeholder="Password">
+      </div>
+      <button class="sign-up">Sign Up</button>
+      <div class="sign-in">
+        <p class="already-have">Already have an account?</p>
+        <p class="log-in">Log in instead</p>
+      </div>
+    </div>
 		<main class="container">
 			<section class="flex feature-product">
 				<figure>
