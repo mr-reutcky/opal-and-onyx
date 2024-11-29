@@ -395,7 +395,8 @@ a .product:first-of-type {
 }
 
 .product:hover {
-  transform: scale(1.02);
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
 }
 
 .product > img {
