@@ -131,13 +131,13 @@ header {
 
 .product-details h2 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 .product-details p {
   font-size: 1.4rem;
-  color: #555;
+  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -168,7 +168,7 @@ header {
 /* Buttons */
 button {
   background-color: #e67e22;
-  color: white;
+  color: #fff;
   border: none;
   padding: 12px 25px;
   border-radius: 5px;
@@ -190,11 +190,43 @@ button.add-to-bag:hover {
   background-color: #2c3e50;
 }
 
-/* Responsive Design */
+/* First breakpoint for 768px */
 @media (max-width: 768px) {
   .feature-product {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; 
+    gap: 15px;
+  }
+
+  .product-image,
+  .product-details {
+    flex: 0 1 auto;
+    max-width: 100%;
+  }
+
+  .product-details h2 {
+    font-size: 2.2rem;
+  }
+
+  .product-details h3 {
+    font-size: 2.2rem;
+  }
+
+  .rating .fa-star {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 1.3rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Second breakpoint for 460px */
+@media (max-width: 460px) {
+  .feature-product {
+    flex-direction: column; 
+    padding: 20px;
+    gap: 20px;
   }
 
   .product-image,
@@ -204,20 +236,24 @@ button.add-to-bag:hover {
   }
 
   .product-details h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .product-details h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .rating .fa-star {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .product-details p {
+    font-size: 1.2rem;
   }
 
   button {
     font-size: 1.2rem;
-    padding: 10px 20px;
+    padding: 8px 15px;
   }
 }
 
