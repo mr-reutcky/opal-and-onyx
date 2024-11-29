@@ -172,7 +172,7 @@ button i .fa-comment:hover {
 .sign-in-modal {
   height: 40rem;
   width: 30rem;
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   gap: 20px;
