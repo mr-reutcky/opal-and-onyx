@@ -99,7 +99,7 @@ header {
 /*-------------------------------*/
 
 .sign-in-modal {
-  height: 40rem;
+  height: 42rem;
   width: 30rem;
   position: fixed;
   display: flex;
@@ -108,13 +108,14 @@ header {
   align-items: center;
   inset: 0;
   margin: auto;
-  z-index: 100;
+  z-index: 200;
   border-radius: 4px;
-  background-color: #1d1c1c;
+  background: var(--app-box-color);
+  transition: all 0.25s ease-in-out;
 }
 
 .modal-title {
-  font-size: 18px;
+  font-size: 24px;
   margin-top: 20px;
 }
 
@@ -130,6 +131,7 @@ header {
 .inputs input {
   box-shadow: inset 1px 1px 1px rgb(0 0 0 / 20%);
   font-size: 20px;
+  color: var(--app-text-color);
   height: 4rem;
   width: 25rem;
   padding: 5px;
@@ -160,7 +162,7 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 }
 
 .sign-up:hover {
-  filter: brightness(95%);
+  filter: brightness(75%);
 }
 
 .sign-in {
@@ -179,12 +181,13 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
   font-size: 16px;
   font-weight: 300;
   cursor: pointer;
+  text-decoration: underline;
   justify-self: center;
   transition: all 0.25s ease-in-out
 }
 
 .log-in:hover {
-  color: blue;
+  color: var(--app-gold-color);
 }
 
 .out-of-focus{
