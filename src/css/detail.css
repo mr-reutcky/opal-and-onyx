@@ -188,7 +188,7 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 }
 
 .sign-up:hover {
-  filter: brightness(75%);
+  background-color: var(--app-gold-hover);
 }
 
 .sign-in {
@@ -248,12 +248,12 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
 /*-------------------------------*/
 
 .feature-product {
-  margin-top: 120px; /* Adjusted for fixed header */
+  margin-top: 120px; 
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .product-image {
@@ -297,6 +297,16 @@ input.password {background: #272525 url(../img/password-icon.png) no-repeat 5px 
   color: #f1c40f;
 }
 
+.info {
+  max-width: 500px;
+}
+
+.feature-buttons {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
 button {
   background-color: var(--app-gold-color);
   color: #fff;
@@ -308,15 +318,15 @@ button {
   margin-bottom: 10px;
 }
 
-button:hover {
-  background-color: #f6bf51;
+.buy-now:hover {
+  background-color: var(--app-gold-hover);
 }
 
-button.add-to-bag {
+.add-to-bag {
   background-color: #34495e;
 }
 
-button.add-to-bag:hover {
+.add-to-bag:hover {
   background-color: #2c3e50;
 }
 
@@ -372,15 +382,6 @@ button.add-to-bag:hover {
   margin: 50px 0;
 }
 
-a:has(+ .product){
-  height: 28rem;
-  width: calc(25% - 20px);
-}
-
-a .product:first-of-type {
-  width: 100%;
-}
-
 .product {
   height: 28rem;
   width: calc(25% - 20px);
@@ -405,7 +406,7 @@ h6 {
 
 .product:hover {
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 16px rgb(0 0 0 / 0.2);
+  box-shadow: 0 8px 16px rgb(200 200 200 / 0.2);
 }
 
 .product > img {
@@ -425,10 +426,12 @@ h6 {
 }
 
 .product-name {
+  font-size: 18px;
   color: var(--app-text-color);
 }
 
 .price {
+  font-size: 16px;
   font-weight: 200;
   color: var(--app-text-color);
 }
@@ -459,14 +462,14 @@ button i:hover {
 }
 
 @media screen and (max-width: 768px) {
-  a:has(+ .product), .product{
+  .product{
     width: calc(50% - 20px);
     max-width: 280px;
   }
 }
 
 @media screen and (max-width: 480px){
-  a:has(+ .product), .product{
+  .product{
     width: 100%;
     max-width: 280px;
   }
